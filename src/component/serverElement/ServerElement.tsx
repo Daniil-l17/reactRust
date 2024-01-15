@@ -13,7 +13,7 @@ const ServerElement: FC<prod> = ({ el }) => {
     <div style={{border: '0.01px solid #fffefe2b'}} className=" rounded-2xl bg-[#1e293b40] w-full py-5 mt-3 flex items-center px-6">
       <div className="flex">
         <div className="flex items-center gap-4">
-          <img src="/rust-icon-512.png" width={30} alt="" />
+          <img src="/rust-icon-512 copy.png" width={30} alt="" />
           <h5>#{el.attributes.rank}</h5>
         </div>
         <div className=" w-[450px] ml-14">

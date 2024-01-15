@@ -17,14 +17,14 @@ const RustPlus = () => {
             <button className=" uppercase bg-[red] rounded mt-6 py-3 px-2 font-semibold">Читать еще</button>
           </div>
           <div>
-            <img src="./../../../src/image/rustplusimage2.png" alt="" />
+            <img src="/rustplusimage2.png" alt="" />
           </div>
         </div>
       </div>
       <div style={{ border: '1px solid #fffefe2b' }} className="relative opacity-70">
         <div className="h-[600px]"
           style={{
-            backgroundImage: 'url(./../../../src/image/image-section.jpg)',
+            backgroundImage: 'url(/image-section.jpg)',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',

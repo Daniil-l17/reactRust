@@ -15,7 +15,7 @@ const Resap = () => {
             <img
               style={{ border: '2px solid #fffefe2b' }}
               className="w-[1100px] rounded-[30px] cursor-pointer"
-              src="./../../../src/image/2023-recap.jpg"
+              src="/2023-recap.jpg"
               alt=""
             />
             <div style={{ border: '2px solid #fffefe2b' }} className="surving rounded-xl ">

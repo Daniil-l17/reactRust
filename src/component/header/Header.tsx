@@ -9,7 +9,7 @@ const Header = () => {
       <div className="container">
         <div className="flex items-center justify-between">
           <Link to="/">
-            <img width={60} height={60} src="./../../../src/image/rust-icon-512.png" alt="" />
+            <img width={60} height={60} src="/rust-icon-512 copy.png" alt="" />
           </Link>
           <ul className="flex items-center gap-6 uppercase cursor-pointer text-lg ">
             {menu.map((el,index) => (

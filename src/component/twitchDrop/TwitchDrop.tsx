@@ -4,7 +4,7 @@ const TwitchDrop = () => {
       <div
         className="h-[800px] rounded-[40px] m-auto max-w-[1850px] flex justify-center"
         style={{
-          backgroundImage: 'url(./../../../src/image/twitch-bg.jpg)',
+          backgroundImage: 'url(/twitch-bg.jpg)',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
