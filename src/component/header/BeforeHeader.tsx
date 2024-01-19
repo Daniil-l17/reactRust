@@ -28,7 +28,7 @@ const BeforeHeader = () => {
     <div
       className="min-h-[765px] rounded-3xl py-[50px] flex flex-col m-auto max-w-[1880px] justify-center px-[90px]"
       style={{
-        backgroundImage: `url(./${res})`,
+        backgroundImage: `url(.${res})`,
         backgroundPosition: 'center',
         backgroundAttachment: 'local',
         backgroundRepeat: 'no-repeat',
