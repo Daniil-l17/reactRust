@@ -6,7 +6,6 @@ import { useSortRunkQuery } from '../../redux/api/api';
 
 const ServerRunk = (props: any) => {
   const {data,isLoading} = useSortRunkQuery({el: props.el,q: props.q})
-  console.log(data)
   
 
   return (

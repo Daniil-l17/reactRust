@@ -18,7 +18,7 @@ const DetailLeftServer: FC<inf> = ({ detail,id }) => {
   const map = detail?.data.attributes.details.rust_url
   const map_url = detail?.data?.attributes?.details?.rust_maps?.url
   const thumbaiUrl =  detail?.data?.attributes?.details.rust_maps?.thumbnailUrl
-  const {serverDetail} = useAppSelector(state => state.serverDetail)
+  const serverDetail = useAppSelector(state => state.favoriteMainaAdd.serverDetail)
   const isExsict = serverDetail.some(el => el.id === detail.data.id)
   const db = useDispatch()
 

@@ -1,4 +1,5 @@
-import SkinDetail from '../../SkinDetail/SkinDetail';
+
+import SkinDetail from '../../component/SkinDetail/SkinDetail';
 import NavFooter from '../../component/predFooter/NavFooter';
 import SkinHazmat from '../../component/skinsHazmat/SkinHazmat';
 import { Skins } from './skins/Skins';

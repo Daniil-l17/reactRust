@@ -6,7 +6,7 @@ import { actions } from '../../redux/slice';
 import { Link } from 'react-router-dom';
 
 const FavoritesServer = () => {
-  const el = useAppSelector(state => state.serverDetail.serverDetail);
+  const el = useAppSelector(state => state.favoriteMainaAdd.serverDetail);
   const db = useDispatch()
   
   return (
@@ -22,7 +22,7 @@ const FavoritesServer = () => {
               const online = 'font-semibold text-lg text-[green]';
               const ofline = 'font-semibold text-lg text-[red]';
               return (
-                <li
+                <li key={e.id}
                   style={{ border: '0.01px solid #fffefe2b' }}
                   className=" justify-between px-6 flex items-center w-[90%] h-[120px] rounded-3xl bg-[#1e293b40]">
                   <div className="flex gap-6 items-center">

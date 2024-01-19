@@ -19,7 +19,7 @@ const Server = () => {
   const [player, setPlayer] = useState('-players');
   const [inp, setInp] = useState('');
   const [results, setResults] = useState('');
-  const {serverDetail} = useAppSelector(state => state.serverDetail)
+  const serverDetail = useAppSelector(state => state.favoriteMainaAdd.serverDetail)
   
   const steps = () => {
     setProve(prev => !prev);
