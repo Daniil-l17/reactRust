@@ -1,7 +1,7 @@
 import { Link, NavLink } from 'react-router-dom';
 
 const Header = () => {
-  const menu = [{title: 'Сервера',link: '/servers'},{title: 'Официальные скины',link: '/skins'},{title: 'Предметы'},{title: 'Купить Rust',link: 'https://store.steampowered.com/app/252490/Rust/'}]
+  const menu = [{title: 'Сервера',link: '/servers'},{title: 'Официальные скины',link: '/skins'},{title: 'Предметы и скины',link: '/items/skins'},{title: 'Купить Rust',link: 'https://store.steampowered.com/app/252490/Rust/'}]
 
 
   return (
