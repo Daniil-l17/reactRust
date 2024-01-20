@@ -1,7 +1,5 @@
 import {useState } from 'react';
 import { IoIosSearch } from 'react-icons/io';
-import { FiArrowRight } from 'react-icons/fi';
-import { FiArrowLeft } from 'react-icons/fi';
 import { Link, Route, Routes} from 'react-router-dom';
 import ServerRunk from '../ServerRunk/ServerRunk';
 import ServerName from '../ServerName/ServerName';
@@ -54,6 +52,7 @@ const Server = () => {
       setName('-name');
     }
   };
+
 
   return (
     <div className="m-auto max-w-[1800px]">
@@ -117,14 +116,6 @@ const Server = () => {
           <Route element={<ServerName q={results} el={name} />} path="/name" />
           <Route element={<ServerPlayer q={results} el={player} />} path="/players" />
         </Routes>
-        <div className="flex items-center justify-center gap-10 mt-8">
-          <button className="flex items-center">
-            <FiArrowLeft /> Предыдущий
-          </button>
-          <button className="flex items-center">
-            Следующий <FiArrowRight />{' '}
-          </button>
-        </div>
       </div>
     </div>
   );
