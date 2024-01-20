@@ -25,7 +25,7 @@ const Footer = () => {
             {Seti.map((el, index) => (
               <a key={index} target="_blank" href={el.link}>
                 <li
-                  className="bg-[#55514e] text-[#fff9f9] flex items-center text-xl justify-center rounded-full py-2 px-2 hover:bg-[#181818] transition duration-300  ease-in-out "
+                  className="bg-[#55514e] text-[#fff9f9] flex items-center text-xl justify-center rounded-full py-2 px-2 hover:bg-[#181818] transition duration-300 "
                   >
                   {el.img}
                 </li>

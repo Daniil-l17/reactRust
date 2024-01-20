@@ -1,7 +1,7 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Header = () => {
-  const menu = [{title: 'Сервера',link: '/servers'},{title: 'Официальные скины',link: '/skins'},{title: 'Тест на раст',link: '/rust/gameQuiz'},{title: 'Предметы'},{title: 'Купить Rust',link: 'https://store.steampowered.com/app/252490/Rust/'}]
+  const menu = [{title: 'Сервера',link: '/servers'},{title: 'Официальные скины',link: '/skins'},{title: 'Предметы'},{title: 'Купить Rust',link: 'https://store.steampowered.com/app/252490/Rust/'}]
 
 
   return (
@@ -13,9 +13,9 @@ const Header = () => {
           </Link>
           <ul className="flex items-center gap-6 uppercase cursor-pointer text-lg ">
             {menu.map((el,index) => (
-              <Link key={index} to={`${el.link}`}>
-              <li className="text-[#e4dad1] hover:text-[#f8f7f4]">{el.title}</li>
-              </Link>
+              <NavLink key={index} className={({isActive}) => isActive ? ' text-[#564ad8]' : 'text-[#dbd8d8] hover:text-[#564ad8] transition duration-150'} to={`${el.link}`}>
+              {el.title}
+              </NavLink>
             ))}
           </ul>
         </div>

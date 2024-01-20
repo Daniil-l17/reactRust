@@ -1,13 +1,17 @@
+import { Link } from "react-router-dom";
+
 const NavFooter = () => {
 
-  const items = ['News','Buy Rust','Companion','Twitch Drops','Merch','Console','Commits','Changelog','Support','Legal']
+  const items = ['Новости','Купить Руст','Компаньон','Твич-дропы','Мерч','Консоль','фиксирует','Журнал изменений','Поддерживать','Юридический']
 
   return (
     <section className="py-[90px]">
       <div className="flex items-center flex-col">
       <div className="flex items-center justify-center gap-8">
+        <Link to="/">
         <svg
           width="206"
+          className=" cursor-pointer"
           height="48"
           viewBox="0 0 206 48"
           fill="none"
@@ -56,8 +60,10 @@ const NavFooter = () => {
             </clipPath>
           </defs>
         </svg>
+        </Link>
         <svg
           width="32"
+          
           height="32"
           viewBox="0 0 32 32"
           fill="none"
@@ -67,7 +73,10 @@ const NavFooter = () => {
             <path d="M31 1L0.999999 31" stroke="#BAB1A8" stroke-width="2" />
           </g>
         </svg>
+        <a target="_blank" href="https://facepunch.com/">
+        
         <svg
+        className=" cursor-pointer"
           width="214"
           height="48"
           viewBox="0 0 214 48"
@@ -93,10 +102,11 @@ const NavFooter = () => {
             </clipPath>
           </defs>
         </svg>
+        </a>
       </div>
       <ul className="flex items-center gap-5 mt-16">
       {items.map((el,index) => 
-      <li className=" cursor-pointer uppercase font-semibold" key={index}>{el}</li>
+      <li className=" hover:text-[#b5b5b5] transition duration-150 cursor-pointer uppercase font-semibold" key={index}>{el}</li>
       )}
       </ul>
       </div>

@@ -9,15 +9,14 @@ const BeforeHeader = () => {
     '/rust_13_nvg.jpg',
     '/rust_23_oilrig.jpg',
     '/rust_07_bradley.jpg',
-    '/rust_11_modularvehicles.jpg'
+    '/rust_11_modularvehicles.jpg',
   ];
   const [res, setRes] = useState('');
 
-    useEffect(() => {
+  useEffect(() => {
     const interv = setInterval(() => setTime(new Date()), 1000);
     return () => clearInterval(interv);
   }, [time]);
-
 
   useEffect(() => {
     const result = imgMain[Math.floor(Math.random() * imgMain.length)];
@@ -43,17 +42,19 @@ const BeforeHeader = () => {
         другие обитатели, <br /> окружающая среда, другие выжившие. <br /> Сделайте все возможное,
         чтобы продержаться еще одну ночь.
       </p>
-      <div className='flex items-center gap-10 mt-[40px]'>
+      <div className="flex items-center gap-10 mt-[40px]">
         {' '}
-        <button className="py-3 px-4 text-lg text-[#e4dad1] rounded bg-[#cd412b]">Купить раст</button>
+        <button className="py-3 px-4 text-lg text-[#e4dad1] rounded bg-[#cd412b] hover:bg-[#cf6353] transition duration-150">
+          Купить раст
+        </button>
         <a href="https://www.youtube.com/watch?v=LGcECozNXEw" target="_blank">
           <button className="py-3 rounded px-5 text-lg text-[#e4dad1] transition ease-in-out delay-150 bg-[#2a2928] border-2 border-[#4c4946] border-solid hover:bg-[#727171]  duration-300">
             Смотреть триллер
           </button>
         </a>
       </div>
-      <div className=' font-semibold'>
-        <h1 className='text-right'>{time.toLocaleTimeString()}</h1>
+      <div className=" font-semibold">
+        <h1 className="text-right">{time.toLocaleTimeString()}</h1>
       </div>
     </div>
   );
