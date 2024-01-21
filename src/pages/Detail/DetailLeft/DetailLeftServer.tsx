@@ -89,7 +89,7 @@ const DetailLeftServer: FC<inf> = ({ detail,id }) => {
           <h4>Официальный сервер</h4>
           <p className="text-[#d7d7d7e2]">{ofserver ? 'true' : 'false'}</p>
         </li>
-        <button onClick={() => db(actions.addServerDetail(detail))} className=' bg-[#6c3eb8] mt-4 rounded-xl py-[10px] w-[230px]'>{!isExsict ? 'Добавить в избарнное' : 'Удалить из избранного'}</button>
+        <button onClick={() => db(actions.addServerDetail(detail))} className={`${isExsict ? 'bg-[#db4040]' : 'bg-[#6c3eb8]'} ' mt-4 rounded-xl py-[10px] w-[230px]`}>{!isExsict ? 'Добавить в избарнное' : 'Удалить из избранного'}</button>
       </ul>
       <div className=' w-full flex gap-5 mt-14 '>
           <a target='_blank' className='w-[200px]' href={map_url ? map_url : '/servers'}>

@@ -14,9 +14,9 @@ const CategoriesSkins = () => {
             <h1 className='mb-3 font-semibold text-xl'>{el.name}</h1>
             <div className='flex flex-wrap  gap-5'>
             {el?.items?.map(e => (
-              <div key={e.name} className="bg-[#23272a] px-3 cursor-pointer py-6 items-center rounded-md w-[230px]">
+              <div key={e.name} className="bg-[#23272a] transition duration-150 hover:bg-[#363d43] flex flex-col px-3 cursor-pointer py-6 items-center rounded-md w-[230px]">
                 <img width={120} height={120} src={e.imageUrl} alt="" />
-                <h1 className=" text-[14px] font-semibold text-[#747f87] text-left">{el.name}</h1>
+                <h1 className=" text-[14px] font-semibold text-[#747f87] text-left">{e.name}</h1>
               </div>
             ))}
             </div>

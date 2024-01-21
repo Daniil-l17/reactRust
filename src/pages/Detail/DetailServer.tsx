@@ -56,7 +56,7 @@ const DetailServer = () => {
                 {/* 
 // @ts-ignore */}
               {player?.filter(item => item?.includes(inp.toLowerCase())).map((el,i) => 
-                <li style={{border: '0.01px solid #fffefe2b'}}  className=' w-[97%] bg-[#1e293b40] px-2 py-3 rounded-lg cursor-pointer' key={i}>{el}</li>
+                <li style={{border: '0.01px solid #fffefe2b'}}  className=' w-[97%] transition duration-150 hover:bg-[#40649e40] bg-[#1e293b40] px-2 py-3 rounded-lg cursor-pointer' key={i}>{el}</li>
                 )}
               </ul>
             </div>
