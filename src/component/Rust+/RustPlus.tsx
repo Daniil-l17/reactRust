@@ -14,7 +14,14 @@ const RustPlus = () => {
               действия со своей командой, получайте оповещения, когда на вас нападают, удаленно
               устанавливайте ловушки и многое другое!
             </p>
-            <button className=" uppercase bg-[red] rounded mt-6 py-3 px-2 font-semibold">Читать еще</button>
+            <a
+              target="_blank"
+              className=" text-[#fff]"
+              href="https://play.google.com/store/apps/details?id=com.facepunch.rust.companion">
+              <button className=" uppercase bg-[red] hover:bg-[#d24e4e] transition duration-150  rounded mt-6 py-3 px-2 font-semibold">
+                Читать еще
+              </button>
+            </a>
           </div>
           <div>
             <img src="/rustplusimage2.png" alt="" />
@@ -22,13 +29,14 @@ const RustPlus = () => {
         </div>
       </div>
       <div style={{ border: '1px solid #fffefe2b' }} className="relative opacity-70">
-        <div className="h-[600px]"
+        <div
+          className="h-[600px]"
           style={{
             backgroundImage: 'url(/image-section.jpg)',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
-            backgroundAttachment: 'fixed'
+            backgroundAttachment: 'fixed',
           }}></div>
       </div>
     </section>
