@@ -11,52 +11,43 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
 header{
   background: rgb(16,16,33);
   background: radial-gradient(circle, rgba(16,16,33,1) 0%, rgba(17,17,17,1) 100%);
 }
-
   body{
     background: rgb(16,16,33);
     background: radial-gradient(circle, rgba(16,16,33,1) 0%, rgba(17,17,17,1) 100%);
   }
-
 * {
   padding: 0;
   margin: 0;
   scrollbar-color: #21354a rgba(228, 224, 224, 0.458);
   scrollbar-width: thin;
 }
-
 .container {
   margin: 0 auto;
   padding: 0 15px;
   max-width: 1650px;
 }
-
 * {
   padding: 0px;
   margin: 0px;
   border: none;
 }
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-
 a,
 a:link,
 a:visited {
   text-decoration: none;
 }
-
 a:hover {
   text-decoration: none;
 }
-
 aside,
 nav,
 footer,
@@ -65,7 +56,6 @@ section,
 main {
   display: block;
 }
-
 h1,
 h2,
 h3,

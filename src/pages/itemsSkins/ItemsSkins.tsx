@@ -1,3 +1,4 @@
+import CategoriesSkins from "../../component/CategoriesSkins/CategoriesSkins";
 import MostPopularSkin from "../../component/mostPopularRustSkin/MostPopularSkin";
 
 const ItemsSkins = () => {
@@ -19,8 +20,9 @@ const ItemsSkins = () => {
           цены на все скины и предметы Rust.
         </p>
       </div>
-      <div className="bg-[rgba(37,39,48,0.34)] rounded-2xl py-5 px-5 mt-7 w-[97%] flex flex-col justify-center  m-auto">
+      <div className=" mt-7 w-[97%] flex flex-col justify-center  m-auto">
       <MostPopularSkin/>
+      <CategoriesSkins/>
       </div>
     </section>
   );

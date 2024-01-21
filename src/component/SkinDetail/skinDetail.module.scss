@@ -27,23 +27,17 @@
   will-change: box-shadow,transform;
   font-size: 18px;
 }
-
 .btn:focus {
   box-shadow: #ac1e1e 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #ac1e1e 0 -3px 0 inset;
 }
-
 .btn:hover {
   box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #ac1e1e 0 -3px 0 inset;
   transform: translateY(-2px);
 }
-
 .btn:active {
   box-shadow: #ac1e1e 0 3px 7px inset;
   transform: translateY(2px);
 }
-
-
-
 .btn2 {
   align-items: center;
   appearance: none;
@@ -73,21 +67,17 @@
   will-change: box-shadow,transform;
   font-size: 18px;
 }
-
 .btn2:focus {
   box-shadow: #4b5f74 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #4b5f74 0 -3px 0 inset;
 }
-
 .btn2:hover {
   box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #4b5f74 0 -3px 0 inset;
   transform: translateY(-2px);
 }
-
 .btn2:active {
   box-shadow: #4b5f74 0 3px 7px inset;
   transform: translateY(2px);
 }
-
 .imgs{
   @apply cursor-pointer w-full h-[400px] py-4 items-center relative
 }

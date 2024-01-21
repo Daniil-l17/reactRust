@@ -5,18 +5,18 @@ import Loading from '../looading/Loading';
 
 const MostPopularSkin = () => {
   const { data, isLoading } = useMostPopularSkinQuery(null);
-  console.log(data);
+
 
   return (
-    <div className="">
+    <div className="bg-[rgba(37,39,48,0.34)] rounded-2xl py-5 px-5">
       {isLoading ? (
         <Loading />
       ) : (
         <>
-          <h1 className=" text-xl  font-semibold ">Самые популярные скины Rust </h1>
+          <h1 className=" text-2xl   font-semibold ">Популярные скины Rust </h1>
           <ul className=" flex flex-wrap gap-5 mt-4">
             {data?.popular.map(el => {
-              return <MostPopularDetail el={el} />;
+              return <MostPopularDetail key={el.id} el={el} />;
             })}
           </ul>
         </>

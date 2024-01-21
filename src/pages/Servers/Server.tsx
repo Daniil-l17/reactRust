@@ -63,7 +63,7 @@ const Server = () => {
         <div className=' relative'>
         <FaServer className=' text-[30px] cursor-pointer' />
         <div className=' bg-[#68276c] flex font-normal text-[12px] justify-center px-[8px] py-[4px] rounded-[30px] right-[-11px] bottom-[-4px] absolute'>
-          <p className=' font-bold contents'>{serverDetail.length}</p>
+          <p className=' font-bold contents'>{serverDetail?.length}</p>
           </div>
         </div>
         </Link>

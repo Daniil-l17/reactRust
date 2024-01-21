@@ -15,7 +15,7 @@ const FavoritesServer = () => {
         style={{ border: '0.01px solid #fffefe2b' }}
         className="bg-[rgba(37,39,48,0.34)] px-10 rounded-3xl m-auto max-w-[1700px] h-[800px]">
         <h1 className=" text-4xl uppercase text-center mt-8 font-semibold mb-8">Избранные</h1>
-        {el.length ? (
+        {el?.length ? (
           <ul className=" h-[600px] flex flex-col gap-6 overflow-auto w-[70%]">
             {el.map(e => {
               const status = e.attributes.status;
