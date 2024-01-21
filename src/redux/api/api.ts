@@ -2,6 +2,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import {Root } from "../../types/Type";
 import { detail } from "../../types/TypeDetail";
 import { detailTypePopular } from "../../types/TypeMostPopular";
+import { detailSkins } from "../../types/TypeSkinDetail";
 
   const API_BASE = 'https://api.battlemetrics.com/servers'
 
@@ -27,8 +28,11 @@ export const api = createApi({
     }),
     mostPopularSkin: builder.query<detailTypePopular, null>({
       query: () => 'https://totalrust.com/api/landing'
+    }),
+    mostSkinDetail: builder.query<detailSkins, string | null>({
+      query: (el) => `https://totalrust.com/api/item/${el}`
     })
   }),
 })
 
-export const {useDetailQuery,useLazySortNameQuery,useLazySortPlayerQuery,useLazySortRunkQuery, useMostPopularSkinQuery} = api 
+export const {useDetailQuery,useLazySortNameQuery,useLazySortPlayerQuery,useLazySortRunkQuery, useLazyMostSkinDetailQuery , useMostSkinDetailQuery , useMostPopularSkinQuery} = api 

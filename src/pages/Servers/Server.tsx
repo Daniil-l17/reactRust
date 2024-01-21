@@ -1,6 +1,6 @@
 import {useState } from 'react';
 import { IoIosSearch } from 'react-icons/io';
-import { Link, Route, Routes} from 'react-router-dom';
+import { Link, Navigate, Route, Routes} from 'react-router-dom';
 import ServerRunk from '../ServerRunk/ServerRunk';
 import ServerName from '../ServerName/ServerName';
 import { GoArrowUp } from 'react-icons/go';
@@ -115,6 +115,7 @@ const Server = () => {
           <Route element={<ServerRunk q={results} el={filtr} />} path="/" />
           <Route element={<ServerName q={results} el={name} />} path="/name" />
           <Route element={<ServerPlayer q={results} el={player} />} path="/players" />
+          <Route element={<Navigate to='/servers' replace /> } path="*" />
         </Routes>
       </div>
     </div>

@@ -7,6 +7,7 @@ import Server from '../pages/Servers/Server';
 import {OfficialSkins} from '../pages/OfficialSkins/OfficialSkins';
 import FavoritesServer from '../pages/favoritesServer/FavoritesServer';
 import ItemsSkins from '../pages/itemsSkins/ItemsSkins';
+import SkinDetail from '../pages/skinDetail/SkinDetail';
 
 
 
@@ -22,6 +23,7 @@ const Router = () => {
         <Route element={<Server/>} path="/servers/*" />
         <Route element={<OfficialSkins/>} path="/skins" />
         <Route element={<ItemsSkins/>} path="/items/skins" />
+        <Route element={<SkinDetail/>} path={`/skin/detail`} />
         <Route element={<FavoritesServer/>} path="/servers/rust/favorites" />
         <Route element={<Navigate to="/" replace />} path="*" />
       </Routes>

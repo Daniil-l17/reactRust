@@ -31,9 +31,8 @@ const SkinHazmat:FC<data> = ({el}) => {
         <h1 className=" text-center mt-6 uppercase font-semibold text-[20px]">{el.name}</h1>
   <p className="text-[#bab1a8] text-center h-[50px] mt-3 mb-6">{el.title}</p>
   <div className="flex flex-1 items-center justify-around">
-    <button className='py-3 px-7 rounded-lg transition duration-100 hover:bg-[#5aa4dd] bg-[#4887b7]'>Читать</button>
     <a target="_blank" className="text-[#e4dad1] " href={el.link}>
-    <button className=' py-3 px-2 rounded-lg transition duration-100 hover:bg-[#f05b5bda] bg-[#ad2f2fc7]'>Купить в стим</button>
+    <button className=' py-3 px-7 rounded-lg transition duration-100 hover:bg-[#f05b5bda] bg-[#ad2f2fc7]'>Купить в стим</button>
     </a>
   </div>
   </div>

@@ -34,7 +34,7 @@ const FavoritesServer = () => {
                         backgroundRepeat: 'no-repeat',
                         backgroundSize: 'cover',
                       }}
-                      className=" h-[80px] w-[80px]"></div>
+                      className=" h-[50px] w-[50px]"></div>
                     <h1
                       style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}
                       className=" w-[390px] text-xl font-semibold">
