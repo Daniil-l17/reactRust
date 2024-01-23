@@ -35,7 +35,7 @@ const BeforeHeader = () => {
         border: '0.01px solid #fffefe2b',
       }}>
       <h1 className=" text-9xl ">
-        Иследовать <br /> Строить <br /> Выживать
+        Исследовать <br /> Строить <br /> Выживать
       </h1>
       <p className="w-[800px] mt-9 text-left text-[22px]">
         Единственная цель в Rust — выжить. <br /> Все хочет, чтобы ты умер- дикая природа острова и
